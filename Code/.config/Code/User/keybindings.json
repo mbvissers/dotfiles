@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+alt+v",
+    "command": "toggleVim"
+  },
+  {
+		"key": "ctrl+r",
+		"command": "extension.vim_ctrl+r",
+		"when": "textInputFocus && vim.mode != 'Insert'"
+	},
+]

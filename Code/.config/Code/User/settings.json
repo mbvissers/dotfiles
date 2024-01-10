@@ -1,0 +1,34 @@
+{
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "files.autoSave": "onFocusChange",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "vim.smartRelativeLine": true,
+  "angular.enable-strict-mode-prompt": false,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "vim.sneakReplacesF": true,
+  "vim.sneak": true,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "solidity.telemetry": true,
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.useCtrlKeys": false,
+  "codeium.enableConfig": {
+    "*": true,
+    "markdown": true
+  }
+}
