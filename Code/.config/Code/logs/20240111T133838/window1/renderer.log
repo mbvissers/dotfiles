@@ -1,0 +1,6 @@
+2024-01-11 13:38:40.415 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'registerIssueDataProvider' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-01-11 13:38:40.696 [info] Started local extension host with pid 60747.
+2024-01-11 13:38:40.767 [info] Started initializing default profile extensions in extensions installation folder. file:///home/martijn/.vscode/extensions
+2024-01-11 13:38:41.003 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/martijn/.vscode/extensions
+2024-01-11 13:38:43.602 [info] [perf] Render performance baseline is 24ms
+2024-01-11 13:42:57.005 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
