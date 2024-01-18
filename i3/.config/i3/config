@@ -188,3 +188,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+exec_always --no-startup-id feh --bg-scale gruvbox-dark.png
