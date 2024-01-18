@@ -1,5 +1,8 @@
 require("options")
 require("keymaps")
+
+local p = require("plugins")
+
 local ascii = require("ascii")
 
 -- Lazy
@@ -18,7 +21,9 @@ vim.opt.rtp:prepend(lazypath)
 -- End Lazy
 
 -- Import plugins
+
 require("lazy").setup({
+	p.lualine,
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
@@ -71,10 +76,6 @@ require("lazy").setup({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.5",
 		dependencies = { "nvim-lua/plenary.nvim" },
-	},
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{
 		"ellisonleao/gruvbox.nvim",
