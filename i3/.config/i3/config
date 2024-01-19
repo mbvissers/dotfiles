@@ -189,4 +189,9 @@ bar {
         status_command i3status
 }
 
-exec_always --no-startup-id feh --bg-scale gruvbox-dark.png
+# Background
+exec --no-startup-id feh --bg-scale gruvbox-dark.png
+
+# Lock PC
+bindsym Control+$mod+l exec ./lock.sh &
+

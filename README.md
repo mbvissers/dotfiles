@@ -12,4 +12,5 @@ VSCode is synced with the built-in sync via my GitHub account
 ## Credits
 
 - [pablocorbalan](https://github.com/pablocorbalann/arch-minimal-wallpapers) for Arch wallpaper.
+- Steve Schoger for the lock icon
 - Everyone else for their open source projects
