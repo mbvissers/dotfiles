@@ -193,5 +193,6 @@ bar {
 exec --no-startup-id feh --bg-scale gruvbox-dark.png
 
 # Lock PC
-bindsym Control+$mod+l exec ./lock.sh &
+# bindsym Control+$mod+l exec ./lock.sh &
+bindsym Control+$mod+l exec --no-startup-id i3lock -c 000000
 
