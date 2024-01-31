@@ -105,8 +105,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+eval $(keychain --eval --quiet id_ed25519)
 
-
+alias gdno="git diff --name-only"
 
 
 
