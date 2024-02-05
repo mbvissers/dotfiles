@@ -21,3 +21,5 @@ vim.keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<cr
 vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
 -- Aerial
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle! right<cr>")
+-- Comment
+-- TODO
