@@ -12,5 +12,6 @@ VSCode is synced with the built-in sync via my GitHub account
 ## Credits
 
 - [pablocorbalan](https://github.com/pablocorbalann/arch-minimal-wallpapers) for Arch wallpaper.
+- [u/atlas-ark](https://www.reddit.com/r/wallpaper/comments/ll1gov/arch_gruvbox_wallpaper_v2_dark_light_3840x2160/) for Arch Gruvbox wallpaper 
 - Steve Schoger for the lock icon
 - Everyone else for their open source projects
