@@ -190,7 +190,7 @@ bar {
 }
 
 # Background
-exec --no-startup-id feh --bg-scale gruvbox-dark.png
+exec --no-startup-id feh --bg-scale ~/dotfiles/wallpapers/gruvbox-dark.png
 
 # Lock PC
 # bindsym Control+$mod+l exec ./lock.sh &
