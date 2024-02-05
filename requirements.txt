@@ -1,4 +1,11 @@
 feh
 ImageMagick
 luarocks
+yay swaylock-effects-git
+i3
+i3lock
+i3bar
+i3status
+hyprland
+hyprpaper
 
