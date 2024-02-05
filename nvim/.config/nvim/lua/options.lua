@@ -14,3 +14,5 @@ vim.g.mapleader = " "
 vim.o.background = "dark"
 -- Clipboard
 vim.opt.clipboard = "unnamedplus"
+-- Scrolloff
+vim.opt.scrolloff = 8
