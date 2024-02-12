@@ -223,6 +223,7 @@ require("lazy").setup({
       "nvim-tree/nvim-web-devicons",
     },
   },
+  { 'justinmk/vim-sneak' }
 })
 
 -- Bufferline
@@ -341,6 +342,9 @@ require("lspconfig").solidity_ls_nomicfoundation.setup({
   capabilities = capabilities,
 })
 require("lspconfig").tsserver.setup({
+  capabilities = capabilities,
+})
+require("lspconfig").prismals.setup({
   capabilities = capabilities,
 })
 -- Set signs for LSP gutter

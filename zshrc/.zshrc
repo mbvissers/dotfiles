@@ -110,3 +110,4 @@ eval $(keychain --eval --quiet id_ed25519)
 alias gdno="git diff --name-only"
 
 export PATH=/home/martijn/.local/bin:$PATH
+export EDITOR=nvim
