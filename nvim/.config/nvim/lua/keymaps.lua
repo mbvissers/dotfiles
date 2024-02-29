@@ -23,3 +23,22 @@ vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
 vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle! right<cr>")
 -- Comment
 -- TODO
+-- Spectre
+vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
+  desc = "Toggle Spectre"
+})
+vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
+  desc = "Search on current file"
+})
+-- Moving single lines
+vim.keymap.set('n', '<A-j>', ':m +1<CR>')
+vim.keymap.set('n', '<A-k>', ':m -2<CR>')
+-- Moving multiple lines
+vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")

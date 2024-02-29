@@ -89,11 +89,19 @@ require("lazy").setup({
     dependencies = { "nvim-lua/plenary.nvim" },
   },
   {
+    'nvim-pack/nvim-spectre',
+    dependencies = {
+      "nvim-lua/plenary.nvim"
+    }
+  },
+  {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
     opts = {},
     config = true,
   },
+  { "rose-pine/neovim",         name = "rose-pine" },
+  { 'arcticicestudio/nord-vim', name = 'nord' },
   { "williamboman/mason.nvim" },
   {
     "stevearc/conform.nvim",
@@ -111,7 +119,7 @@ require("lazy").setup({
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
-  { "echasnovski/mini.pairs", event = "VeryLazy" },
+  { "echasnovski/mini.pairs",  event = "VeryLazy" },
   -- { "echasnovski/mini.surround", version = "*" },
   {
     "kylechui/nvim-surround",
@@ -124,7 +132,7 @@ require("lazy").setup({
     end,
   },
   { "williamboman/mason.nvim" },
-  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
+  { "akinsho/bufferline.nvim", version = "*",     dependencies = "nvim-tree/nvim-web-devicons" },
   {
     "Exafunction/codeium.vim",
     config = function()
@@ -297,7 +305,8 @@ require("gruvbox").setup({
     AlphaFooter = { italic = true },
   },
 })
-vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[colorscheme nord]])
 
 -- CMP
 local cmp = require("cmp")

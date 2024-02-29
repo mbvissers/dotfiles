@@ -111,3 +111,5 @@ alias gdno="git diff --name-only"
 
 export PATH=/home/martijn/.local/bin:$PATH
 export EDITOR=nvim
+
+eval "$(zoxide init zsh)"
