@@ -112,4 +112,7 @@ alias gdno="git diff --name-only"
 export PATH=/home/martijn/.local/bin:$PATH
 export EDITOR=nvim
 
+alias cd="z"
 eval "$(zoxide init zsh)"
+
+alias mux="tmuxinator"
