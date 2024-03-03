@@ -1,7 +1,8 @@
 require("options")
 require("keymaps")
 
-local p = require("plugins")
+local themes = require("themes")
+local plugins = require("plugins")
 
 local ascii = require("ascii")
 
@@ -23,7 +24,8 @@ vim.opt.rtp:prepend(lazypath)
 -- Import plugins
 
 require("lazy").setup({
-  p.lualine,
+  plugins,
+  themes,
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
@@ -32,56 +34,6 @@ require("lazy").setup({
       vim.o.timeoutlen = 300
     end,
     opts = {},
-  },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    },
-    config = function()
-      require("neo-tree").setup({
-        event_handlers = {
-          {
-            event = "file_opened",
-            handler = function(file_path)
-              --auto close
-              require("neo-tree.command").execute({ action = "close" })
-            end,
-          }
-        },
-        close_if_last_window = true,
-        default_component_configs = {
-          git_status = {
-            symbols = {
-              added = "✚",
-              modified = "",
-              deleted = "✘",
-              ignored = "",
-              untracker = "U"
-            },
-          },
-        },
-        window = {
-          mappings = {
-            ["<cr>"] = "open",
-            ["l"] = "open",
-            ["h"] = "close_node",
-          },
-          width = 35,
-        },
-        filesystem = {
-          filtered_items = {
-            visible = true,
-            hide_dotfiles = false,
-            hide_gitignored = false,
-          },
-        },
-      })
-    end,
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -94,14 +46,6 @@ require("lazy").setup({
       "nvim-lua/plenary.nvim"
     }
   },
-  {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
-    opts = {},
-    config = true,
-  },
-  { "rose-pine/neovim",         name = "rose-pine" },
-  { 'arcticicestudio/nord-vim', name = 'nord' },
   { "williamboman/mason.nvim" },
   {
     "stevearc/conform.nvim",
@@ -119,7 +63,7 @@ require("lazy").setup({
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
-  { "echasnovski/mini.pairs",  event = "VeryLazy" },
+  { "echasnovski/mini.pairs", event = "VeryLazy" },
   -- { "echasnovski/mini.surround", version = "*" },
   {
     "kylechui/nvim-surround",
@@ -132,7 +76,7 @@ require("lazy").setup({
     end,
   },
   { "williamboman/mason.nvim" },
-  { "akinsho/bufferline.nvim", version = "*",     dependencies = "nvim-tree/nvim-web-devicons" },
+  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
   {
     "Exafunction/codeium.vim",
     config = function()
@@ -300,13 +244,9 @@ require("telescope").setup({
 })
 
 -- Theme
-require("gruvbox").setup({
-  overrides = {
-    AlphaFooter = { italic = true },
-  },
-})
 -- vim.cmd([[colorscheme gruvbox]])
 vim.cmd([[colorscheme nord]])
+-- vim.cmd([[colorscheme rose-pine]])
 
 -- CMP
 local cmp = require("cmp")

@@ -1,5 +1,5 @@
 local lualine = require("plugins.lualine")
+local neoTree = require("plugins.neo-tree")
 
-local M = {}
-M.lualine = lualine
+local M = { lualine, neoTree }
 return M
