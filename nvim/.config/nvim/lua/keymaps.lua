@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader>bf", "<cmd>Telescope buffers previewer=false<cr>")
 vim.keymap.set("n", "<leader>bb", "<cmd>BufferLineCyclePrev<cr>")
 vim.keymap.set("n", "<leader>bn", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<leader>c", "<cmd>bd<cr>")
+vim.keymap.set("n", "<leader>C", "<cmd>bd!<cr>")
 -- ToggleTerm
 vim.keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>")
 vim.keymap.set("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>")
@@ -40,5 +41,5 @@ vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search(
 vim.keymap.set('n', '<A-j>', ':m +1<CR>')
 vim.keymap.set('n', '<A-k>', ':m -2<CR>')
 -- Moving multiple lines
-vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")
+vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
