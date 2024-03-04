@@ -4,8 +4,6 @@ require("keymaps")
 local themes = require("themes")
 local plugins = require("plugins")
 
-local ascii = require("ascii")
-
 -- Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -69,32 +67,8 @@ require("lazy").setup({
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
-    config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
-    end,
   },
   { "williamboman/mason.nvim" },
-  { "akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons" },
-  {
-    "Exafunction/codeium.vim",
-    config = function()
-      -- Change '<C-g>' here to any keycode you like.
-      vim.keymap.set("i", "<C-g>", function()
-        return vim.fn["codeium#Accept"]()
-      end, { expr = true, silent = true })
-      vim.keymap.set("i", "<c-;>", function()
-        return vim.fn["codeium#CycleCompletions"](1)
-      end, { expr = true, silent = true })
-      vim.keymap.set("i", "<c-,>", function()
-        return vim.fn["codeium#CycleCompletions"](-1)
-      end, { expr = true, silent = true })
-      vim.keymap.set("i", "<c-x>", function()
-        return vim.fn["codeium#Clear"]()
-      end, { expr = true, silent = true })
-    end,
-  },
   {
     "numToStr/Comment.nvim",
     opts = {
@@ -102,36 +76,7 @@ require("lazy").setup({
     },
     lazy = false,
   },
-  {
-    "goolord/alpha-nvim",
-    config = function()
-      local dashboard = require("alpha.themes.dashboard")
-      dashboard.section.header.val = ascii.boykisser2
-      -- Dashboard buttons
-      dashboard.section.buttons.val = {
-        dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
-        dashboard.button("f", "  Find file", ":Telescope find_files<CR>"),
-        dashboard.button("r", "  Recently used files", ":Telescope oldfiles<CR>"),
-        dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua<CR>"),
-        dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-      }
-      local function footer()
-        local total_plugins = require("lazy").stats().count
-        local version = vim.version()
-        local nvim_version_info = "  Neovim v"
-            .. version.major
-            .. "."
-            .. version.minor
-            .. "."
-            .. version.patch
-        return "󰂓 " .. total_plugins .. " plugins" .. nvim_version_info
-      end
-      dashboard.section.footer.val = footer()
-      dashboard.section.footer.opts.hl = "AlphaFooter"
 
-      require("alpha").setup(dashboard.config)
-    end,
-  },
   {
     "akinsho/toggleterm.nvim",
     version = "*",
@@ -143,7 +88,7 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     dependencies = { { "williamboman/mason-lspconfig.nvim" } },
   },
-  { "folke/neodev.nvim",   opts = {} },
+  { "folke/neodev.nvim",      opts = {} },
   { "hrsh7th/cmp-nvim-lsp" },
   {
     "nvim-treesitter/nvim-treesitter",
