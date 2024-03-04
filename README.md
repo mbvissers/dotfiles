@@ -9,6 +9,10 @@ From the home directory `~`, run `stow <module>` where `module` is  folder nme i
 
 VSCode is synced with the built-in sync via my GitHub account
 
+## Images
+
+![neovim](./images/neovim.png)
+
 ## Git Cloning
 
 Don't forget to clone recursively for submodules until I find a way to ignore the tmux packages properly.
