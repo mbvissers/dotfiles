@@ -11,7 +11,7 @@ VSCode is synced with the built-in sync via my GitHub account
 
 ## Images
 
-![neovim](./images/neovim.png)
+![neovim](./images/nvim.png)
 
 ## Git Cloning
 
