@@ -64,6 +64,10 @@ require("lazy").setup({
   { "echasnovski/mini.pairs", event = "VeryLazy" },
   -- { "echasnovski/mini.surround", version = "*" },
   {
+    "echasnovski/mini.bufremove",
+    event = "VeryLazy",
+  },
+  {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
