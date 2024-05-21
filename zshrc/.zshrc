@@ -105,7 +105,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-eval $(keychain --eval --quiet id_ed25519)
+# eval $(keychain --eval --quiet id_ed25519)
 
 alias gdno="git diff --name-only"
 
@@ -116,3 +116,8 @@ alias cd="z"
 eval "$(zoxide init zsh)"
 
 alias mux="tmuxinator"
+
+PATH=$PATH:$HOME/flutter/flutter
+alias helix="hx"
+
+alias cat="bat --paging=never"
