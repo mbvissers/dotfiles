@@ -124,23 +124,23 @@ require("lazy").setup({
       "nvim-tree/nvim-web-devicons",
     },
   },
-  { 'justinmk/vim-sneak' }
+  { 'justinmk/vim-sneak' },
 })
 
 -- Bufferline
-require("bufferline").setup({
-  options = {
-    diagnostics = "nvim_lsp",
-    offsets = {
-      {
-        filetype = "neo-tree",
-        highlight = "Directory",
-        text = "File Explorer",
-        text_align = "left",
-      },
-    },
-  },
-})
+-- require("bufferline").setup({
+--   options = {
+--     diagnostics = "nvim_lsp",
+--     offsets = {
+--       {
+--         filetype = "neo-tree",
+--         highlight = "Directory",
+--         text = "File Explorer",
+--         text_align = "left",
+--       },
+--     },
+--   },
+-- })
 
 -- Aerial
 require("aerial").setup({
