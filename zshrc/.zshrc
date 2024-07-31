@@ -120,7 +120,7 @@ alias mux="tmuxinator"
 PATH=$PATH:$HOME/flutter/flutter
 alias helix="hx"
 
-alias cat="bat --paging=never"
+alias bat="bat --paging=never"
 
 . "$HOME/.cargo/env"
 
