@@ -110,7 +110,7 @@ export NVM_DIR="$HOME/.nvm"
 alias gdno="git diff --name-only"
 
 export PATH=/home/martijn/.local/bin:$PATH
-export EDITOR=nvim
+export EDITOR=vi
 
 alias cd="z"
 eval "$(zoxide init zsh)"
