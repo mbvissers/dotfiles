@@ -110,7 +110,7 @@ export NVM_DIR="$HOME/.nvm"
 alias gdno="git diff --name-only"
 
 export PATH=/home/martijn/.local/bin:$PATH
-export EDITOR=vi
+export EDITOR="nvim --clean"
 
 alias cd="z"
 eval "$(zoxide init zsh)"
@@ -133,3 +133,4 @@ esac
 # pnpm end
 
 alias x=exit
+export NODE_OPTIONS="--max-old-space-size=4096"
