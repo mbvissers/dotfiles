@@ -134,3 +134,6 @@ esac
 
 alias x=exit
 export NODE_OPTIONS="--max-old-space-size=4096"
+export PICO_SDK_PATH=~/pico-sdk
+
+eval "$(starship init zsh)"

@@ -1,0 +1,13 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = "$all "
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+truncation_length = 2
+home_symbol = "~"
+
+[ruby]
+detect_variables = []
+
