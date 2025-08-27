@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/mbvissers/.zsh/completions:"* ]]; then export FPATH="/home/mbvissers/.zsh/completions:$FPATH"; fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -137,3 +139,4 @@ export NODE_OPTIONS="--max-old-space-size=4096"
 export PICO_SDK_PATH=~/pico-sdk
 
 eval "$(starship init zsh)"
+. "/home/mbvissers/.deno/env"
