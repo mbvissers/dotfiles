@@ -106,16 +106,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-# eval $(keychain --eval --quiet id_ed25519)
-
 alias gdno="git diff --name-only"
 
+PATH=$PATH:/home/mbvissers/.local/bin
 export PATH=/home/martijn/.local/bin:$PATH
 export EDITOR="nvim --clean"
 
 alias cd="z"
 eval "$(zoxide init zsh)"
+
 
 alias mux="tmuxinator"
 
@@ -124,7 +123,7 @@ alias helix="hx"
 
 alias bat="bat --paging=never"
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 # pnpm
 export PNPM_HOME="/home/martijn/.local/share/pnpm"
@@ -139,4 +138,5 @@ export NODE_OPTIONS="--max-old-space-size=4096"
 export PICO_SDK_PATH=~/pico-sdk
 
 eval "$(starship init zsh)"
-. "/home/mbvissers/.deno/env"
+# . "/home/mbvissers/.deno/env"
+
