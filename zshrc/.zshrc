@@ -135,8 +135,13 @@ esac
 
 alias x=exit
 export NODE_OPTIONS="--max-old-space-size=4096"
-export PICO_SDK_PATH=~/pico-sdk
 
 eval "$(starship init zsh)"
 # . "/home/mbvissers/.deno/env"
+PATH=$PATH:$HOME/go/bin
+alias k=kubectl
+
+export PICO_SDK_PATH="$HOME/pico/pico-sdk"
+export PICO_FETCH_FROM_GIT="on"
+export PATH=$HOME/opt/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
 

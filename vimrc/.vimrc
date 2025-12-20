@@ -10,8 +10,6 @@ set relativenumber
 " Indentation / tabs
 set tabstop=4       " number of spaces a <Tab> counts for
 set shiftwidth=4    " spaces for each step of autoindent
-set expandtab       " convert tabs to spaces
-set smartindent     " smart autoindenting on new lines
 
 " Searching
 set ignorecase      " case-insensitive search...
