@@ -1,7 +1,0 @@
-# Ignore everything like tmp files
-*
-
-# Except the following
-!.gitignore
-!settings.json
-!keymap.json
