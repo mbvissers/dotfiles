@@ -140,6 +140,7 @@ eval "$(starship init zsh)"
 # . "/home/mbvissers/.deno/env"
 PATH=$PATH:$HOME/go/bin
 alias k=kubectl
+alias hm=home-manager
 
 export PICO_SDK_PATH="$HOME/pico/pico-sdk"
 export PICO_FETCH_FROM_GIT="on"
