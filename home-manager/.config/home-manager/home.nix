@@ -20,7 +20,6 @@
     jq
     ranger
     fzf
-    ghostty
     luarocks
   ];
 
