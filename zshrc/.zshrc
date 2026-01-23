@@ -145,4 +145,4 @@ alias hm=home-manager
 export PICO_SDK_PATH="$HOME/pico/pico-sdk"
 export PICO_FETCH_FROM_GIT="on"
 export PATH=$HOME/opt/gcc-arm-none-eabi-10.3-2021.10/bin:$PATH
-
+export PATH=$PATH:/usr/local/go/bin
