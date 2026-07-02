@@ -12,29 +12,38 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    xclip
+    # Editors
     vim-full
     neovim
+    emacs
     helix
+    # Terminal tools
     tmux
-    jq
+    slides
     ranger
     fzf
-    slides
+    jq
+    # Programs
     foliate
-    emacs
+    # Dev tools
     gcc
     cmake
     gnumake
     clang-tools
     nodejs_22
     nodePackages."pnpm"
+    openjdk25
     # For Neovim config
+    luajitPackages.fennel
+    xclip
     tree-sitter
     ripgrep
     fd
     lua
     luarocks
+    # For education
+    kind
+    kubectl
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
