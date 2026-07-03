@@ -33,6 +33,7 @@
     nodejs_22
     nodePackages."pnpm"
     openjdk25
+    maven
     # For Neovim config
     luajitPackages.fennel
     xclip
