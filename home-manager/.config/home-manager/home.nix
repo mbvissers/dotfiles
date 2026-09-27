@@ -30,7 +30,7 @@
     cmake
     gnumake
     clang-tools
-    nodejs_22
+    nodejs_latest
     nodePackages."pnpm"
     openjdk25
     maven
