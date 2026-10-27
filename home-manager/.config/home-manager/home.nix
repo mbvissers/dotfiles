@@ -34,6 +34,7 @@
     nodePackages."pnpm"
     openjdk25
     maven
+    postgresql
     # For Neovim config
     luajitPackages.fennel
     xclip
